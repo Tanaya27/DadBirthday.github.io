@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="If-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Baba !</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c206c09249.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+
+      <div class="header-text">
+        <h1>Happy Birthday <span>Baba !</span></h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------about---------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/8.jpeg" alt="imageuser">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title"></h1>
+          <p>
+            <b>Today, we celebrate the amazing person who has always been there for us. Happy Birthday, Dad! <br>Thank you for your love, support, and guidance throughout the years. Let's make this day special together! Best wishes from your family.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------services---------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">Celebrating Together</h1>
+      <div class="services-list">
+        <div>
+          <img src="images/3.jpeg" alt="Cake and Fun">
+        </div>
+        <div>
+          <img src="images/2.jpeg" alt="Family Time">
+        </div>
+        <div>
+          <img src="images/1.jpeg" alt="Special Memories">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-----------portfolio-------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Memories and Wishes</h1>
+    </div>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/6.jpeg">
+        <div class="layer">
+          <h3>With Love from Minu</h3>
+          <p>Happy Birthday to my wonderful husband! Your strength and love make every day brighter. Enjoy your special day!</p>
+          <i class="fa-solid fa-up-right-from-square"></i>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/4.jpeg">
+        <div class="layer">
+          <h3>Wishing from Tanaya</h3>
+          <p>Happy Birthday, Baba ! You’re my hero and my guide. May your day be filled with joy and laughter. Love you!</p>
+          <i class="fa-solid fa-up-right-from-square"></i>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/5.jpeg">
+        <div class="layer">
+          <h3>Love from Tanmay</h3>
+          <p>Happy Birthday, Baba ! Your wisdom and kindness have shaped who I am. Here’s to more great memories together. Cheers!</p>
+          <i class="fa-solid fa-up-right-from-square"></i>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">With love from Minu,Tanaya,Tanmay ❤️         15/07/2024  </a>
+  </div>
+
+
+  <!-- Script for tab navigation -->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <!-- Script for side menu -->
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>
